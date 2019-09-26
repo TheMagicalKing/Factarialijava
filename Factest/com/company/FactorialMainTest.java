@@ -27,6 +27,22 @@ public class FactorialMainTest extends TestCase {
             resultat = FactorialMain.factorialUdregner(8);
             assertEquals(40320, resultat);
 
+            //tester for 0
+            //input 0
+            //forventet output 0
+            resultat = FactorialMain.factorialUdregner(0);
+            assertEquals(1, resultat);
+            //Test kommer til at fejle grundet
+
+            //tester for kommatal
+            //input 3.5
+            //forventet output 6
+            resultat = FactorialMain.factorialUdregner(3);
+            assertEquals(6, resultat);
+            //Test kommer til at fejle
+
+
+
 
 
     }
