@@ -16,9 +16,13 @@ public class FactorialMain {
 
 
     public static long factorialUdregner(long fact){
-    if (fact == 0)
-        return 1;
-    else
-        return fact*factorialUdregner(fact-1);
+        if (fact == 0 )
+            return 1;
+        else if (fact <= 0 )
+            return fact*factorialUdregner(fact+1);
+        else
+            return fact*factorialUdregner(fact-1);
+
+
     }
 }
